@@ -46,7 +46,7 @@ export default function Description() {
 
 
           <div data-scroll data-scroll-speed={0.1}>
-            <Rounded className={styles.button}>
+            <div className={styles.button}>
               <Image
                 src="/images/projects/avatar.jpg"
                 fill={true}
@@ -54,7 +54,7 @@ export default function Description() {
                 alt="avatar"
               />
 
-            </Rounded>
+            </div>
           </div>
         </div>
 
