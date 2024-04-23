@@ -1,6 +1,6 @@
 "use client";
-import styles from "./style.module.css";
 import { useState, useEffect, useRef } from "react";
+import styles from "./style.module.css";
 import Project from "./components/project";
 import { motion } from "framer-motion";
 import gsap from "gsap";
