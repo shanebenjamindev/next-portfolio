@@ -7,30 +7,30 @@
   cursor: pointer;
   transition: all 0.2s;
 
-  h2 {
+  & h2 {
     font-size: var(--fontSize-title-lg);
     margin: 0px;
     font-weight: var(--fontWeight-largh);
     transition: all 0.4s;
   }
 
-  p {
+  & p {
     transition: all 0.4s;
     font-weight: var(--fontWeight-medium);
   }
 
-  &:last-of-type {
+  & :last-of-type {
     border-bottom: 1px solid rgb(201, 201, 201);
   }
 
   &:hover {
     opacity: 0.5;
 
-    h2 {
+    & h2 {
       transform: translateX(-10px);
     }
 
-    p {
+    & p {
       transform: translateX(10px);
     }
   }
