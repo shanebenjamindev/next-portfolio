@@ -3,31 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color-bg: rgb(41, 41, 41);
+  --fade-color: rgb(153, 153, 153);
+
+  --fontSize-title-lg: 60px;
+  --fontWeight-largh: 400;
+  --fontWeight-medium: 300;
+
+  --fontSize-content-lg: 36px;
+  --fontSize-content-md: 18px;
+  --fontSize-content-sm: 14px;
+
+  /* // --secondary-color-bg: ;
+    --fade-color: rgb(153, 153, 153);
+    // --primary-color-text: ; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0px;
+  overflow: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media screen and (max-width: 739px) {
+  :root {
+    --fontSize-title-lg: 20px;
+    --fontSize-content-lg: 20px;
+    --fontSize-content-md: 16px;
   }
 }
