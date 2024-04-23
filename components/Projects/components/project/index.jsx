@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "./style.module.scss";
+import styles from "./style.module.css";
 
 export default function index({ index, title, manageModal, role }) {
   return (
