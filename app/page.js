@@ -18,7 +18,7 @@ export default function Home() {
 
         const LocomotiveScroll = (await import('locomotive-scroll')).default
 
-        const locomotiveScroll = new LocomotiveScroll({ el: document.querySelector('[data-scroll]'), smooth: true, smoothMobile: true })
+        const locomotiveScroll = new LocomotiveScroll();
         setTimeout(() => {
 
           setIsLoading(false);

@@ -22,7 +22,6 @@
 
 body {
   margin: 0px;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 739px) {
