@@ -1,9 +1,9 @@
 "use client";
 import styles from "./style.module.css";
-// import Rounded from "../../common/RoundedButton";
+import Rounded from "../../common/RoundedButton";
 import { useRef, useState } from "react";
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
-// import Magnetic from "../../common/Magnetic";
+import Magnetic from "../../common/Magnetic";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -15,7 +15,7 @@ export default function Contact() {
     name: "",
     email: "",
     message: "",
-  })
+  });
   const [submitMessage, setSubmitMessage] = useState("");
 
   const handleChange = (e) => {
@@ -50,7 +50,7 @@ export default function Contact() {
     offset: ["start end", "end end"],
   });
   const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
-  const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
+  const y = useTransform(scrollYProgress, [0, 1], [-500, 0]);
   const rotate = useTransform(scrollYProgress, [0, 1], [120, 90]);
 
   const handleCopy = (text) => {
@@ -81,9 +81,9 @@ export default function Contact() {
             className={`${styles.contactButtonContainer}`}
           >
             <button style={{ backgroundColor: "transparent", border: "none" }}>
-              {/* <Rounded className={`${styles.button}`}>
+              <Rounded className={`${styles.button}`}>
                 <p>Get in touch</p>
-              </Rounded> */}
+              </Rounded>
             </button>
           </motion.div>
 
@@ -112,12 +112,12 @@ export default function Contact() {
         </form>
 
         <div className={`${styles.nav} md:flex lg:flex gap-32 `}>
-          {/* <Rounded onClick={() => handleCopy("vophonggiang0205@gmail.com")}>
+          <Rounded onClick={() => handleCopy("vophonggiang0205@gmail.com")}>
             <p>vophonggiang0205@gmail.com</p>
           </Rounded>
           <Rounded onClick={() => handleCopy("(+84) 834 718 218")}>
             <p>(+84) 834 718 218</p>
-          </Rounded> */}
+          </Rounded>
         </div>
         <div className={`${styles.info} md:flex lg:flex`}>
           <div>
@@ -133,17 +133,17 @@ export default function Contact() {
           <div>
             <span>
               <h3>Create by</h3>
-              {/* <Magnetic>
+              <Magnetic>
                 <p onClick={() => handleCopy("vophonggiang0205@gmail.com")}>
                   vophonggiang0205@gmail.com
                 </p>
-              </Magnetic> */}
+              </Magnetic>
             </span>
-            {/* <Magnetic>
+            <Magnetic>
               <p onClick={() => handleCopy("(+84) 834 718 218")}>
                 (+84) 834 718 218
               </p>
-            </Magnetic> */}
+            </Magnetic>
           </div>
         </div>
       </div>
