@@ -18,7 +18,7 @@ export default function Home() {
 
         const LocomotiveScroll = (await import('locomotive-scroll')).default
 
-        const locomotiveScroll = new LocomotiveScroll();
+        const locomotiveScroll = new LocomotiveScroll({ el: document.querySelector('[data-scroll]'), smooth: true, smoothMobile: true })
         setTimeout(() => {
 
           setIsLoading(false);
@@ -35,12 +35,12 @@ export default function Home() {
   }, [])
 
   return (
-    <div>
+    <main>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Landing />
       <Projects />
-    </div>
+    </main>
   );
 }
