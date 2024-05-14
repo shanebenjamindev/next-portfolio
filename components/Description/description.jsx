@@ -8,7 +8,7 @@ import Rounded from "@/common/RoundedButton";
 export default function Description() {
 
   const phrase =
-    "Have 1 year experience in web development, my objective is to leverage to contribute effectively to your team, I am eager to continue my professional growth journey within your esteemed organization.";
+    "I am helping brands to stand out in the digital era.Together we will set the new status quo. Always on the cutting edge.";
   const description = useRef(null);
   const isInView = useInView(description);
   return (
@@ -16,6 +16,7 @@ export default function Description() {
       <div ref={description} className={styles.description}>
         <div className={`${styles.body} md:flex`}>
           <p>
+            Hello, my name is Giang. <br></br>
             {phrase.split(" ").map((word, index) => {
               return (
                 <span key={index} className={styles.mask}>
@@ -39,13 +40,10 @@ export default function Description() {
             <br></br>
             Degree Major: Information Systems
             <br></br>
-            CyberSoft Academy
-            <br></br>
-            02/2023 - 08/2023
           </motion.p>
 
 
-          <div data-scroll data-scroll-speed={0.1}>
+          <div data-scroll data-scroll-speed={0.2}>
             <div className={styles.button}>
               <Image
                 src="/images/projects/avatar.jpg"
@@ -59,22 +57,11 @@ export default function Description() {
         </div>
 
         <div>
-          <p>
-            Tech Stack: Node.js, ReactJS (Redux, React-Router-DOM,...), HTML,
-            JavaScript, CSS (SASS), PHP
-          </p>
-          <p>API Development: RESTful APIs, Express</p>
-          <p>Databases: MongoDB, MySQL</p>
-          <p>Tools: Figma, WordPress, Git (GitHub, SourceTree)</p>
-        </div>
-        <div>
-          Other:
-          <p>Responsive design, UI/UX design </p>
-          <p>
-            Effective communication, Teamwork Problem solving, Attention to
-            Detail
-          </p>
-          <p>Design pattern, styled-components, clean code, OOP</p>
+          <h1 className="text-2xl font-extralight">SKILLS</h1>
+          <p>(​MERN)​ ​MongoDB,​ ​Express,​ ​ReactJS,​ ​NodeJS, NextJs, RESTful APIs, MySQL</p>
+          <p>Figma, WordPress, PHP, C#,</p>
+          <p>Git (GitHub, SourceTree)</p>
+          <p>English, Teamwork, Problem solving, Clean code </p>
         </div>
       </div>
     </div>

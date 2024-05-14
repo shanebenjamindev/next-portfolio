@@ -62,8 +62,8 @@ export default function Contact() {
     <motion.div style={{ y }} ref={container} className={styles.contact}>
       <div className={`${styles.contactContainer} `}>
         <div className={`${styles.contactTitle}`}>
-          <span className="lg:flex md:flex">
-            <h2>
+          <span className="lg:flex md:flex ">
+            <h2 >
               {`Let's work`} <br></br>
             </h2>
           </span>
@@ -115,9 +115,8 @@ export default function Contact() {
           <Rounded onClick={() => handleCopy("vophonggiang0205@gmail.com")}>
             <p>vophonggiang0205@gmail.com</p>
           </Rounded>
-          <Rounded onClick={() => handleCopy("(+84) 834 718 218")}>
-            <p>(+84) 834 718 218</p>
-          </Rounded>
+          {/* <Rounded onClick={() => handleCopy("(+84) 834 718 218")}>
+            {/* <p>(+84) 834 718 218</p> */}
         </div>
         <div className={`${styles.info} md:flex lg:flex`}>
           <div>
@@ -140,9 +139,7 @@ export default function Contact() {
               </Magnetic>
             </span>
             <Magnetic>
-              <p onClick={() => handleCopy("(+84) 834 718 218")}>
-                (+84) 834 718 218
-              </p>
+              <p>Please contact me via email</p>
             </Magnetic>
           </div>
         </div>
